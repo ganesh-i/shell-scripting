@@ -1,6 +1,6 @@
 #!/bin/bash
-userid=$(id -u)
-if [ $userid -nq 0 ]; then
+USERID=$(id -u)
+if [ $USERID -ne 0 ]; then
 echo "please enter root user"
 exit 1
 fi
